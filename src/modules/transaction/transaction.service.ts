@@ -25,6 +25,7 @@ export class TransactionService {
     const createdTransaction = new this.transactionModel({
       itemId: createTransactionDto.itemId,
       itemName: item.itemName,
+      itemCide: item.itemCode,
       quantity: createTransactionDto.quantity,
       price: price,
       discountPercentage: createTransactionDto.discountPercentage,
